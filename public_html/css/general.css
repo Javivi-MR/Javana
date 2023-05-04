@@ -1,0 +1,146 @@
+/* Codigo correspondiente al header*/
+body{
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    /*thin black border*/
+    border-bottom: 1px solid #000000;
+}
+
+.BarraNavDiv{
+    background-color: #FFFFFF;  
+    display: flex; 
+    height: 7em;
+}
+
+.ImagenLogoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenLogo
+{
+    display: inline-block; 
+    width: auto; 
+}
+
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ListaBarraNav{
+    display: inline-flex;
+}
+
+h1{
+    display: inline-flex;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-size: 15mm;
+}
+
+.ListaBarraNav{
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    margin-left: auto;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.ElementoBarraNav{
+    color: #14ADD6;
+    margin-left: 20px;
+    font-size: 7mm;
+    font-weight: bold;
+}
+
+
+/* Codigo correspondiente al footer*/
+#footer{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content:space-between;
+    color: #f1f1f1;
+    margin-bottom: auto;
+}
+
+.ContactoDiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: #14ADD6;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10px;
+}
+
+.CopyDiv{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: auto;
+    font-weight: bold;
+    color: #14ADD6;
+}
+
+.RedesSocialesDiv{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    background-color: #14ADD6;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+}
+
+.RedesSocialesImagenesDiv{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    justify-content: space-around;
+}
+
+#insta{
+    margin-right: 2em;
+}
+
+#twit{
+    margin-left: 2em;
+}
+
+#CorreoContacto{
+    display: contents;
+    color: #f1f1f1;
+}
+
+/* Estilos para pantallas con un ancho máximo de 1220px */
+@media (max-width: 1220px) {
+    header{
+        width: 76.25em;
+    }
+
+    main{
+        width: 76.25em;
+    }
+
+    footer{
+        width: 76.25em;
+    }
+}

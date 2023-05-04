@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MindMeetings">
+    <meta name="description" content="Mindmeetings es la web con la que podras realizar reserva para salas de estudio, recreo...">
+    <meta name="keywords" content="Reserva, salas, estudio, recreo, reuniones, conferencias, cursos, eventos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/registro.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/CambiarInfo.js"></script>
+    <script src="./js/validacion-formulario.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
+        <nav class="BarraNavDiv">
+            <div class="ImagenLogoDiv">
+                <a href="./index.html" aria-label="Imagen del logo"> <!-- Link para la imagen del logo -->
+                    <img src="./images/logo.png" alt="Imagen del logo" class="ImagenLogo" height="100">
+                </a>
+            </div>
+            <ul class="ListaBarraNav"> <!-- -Lista de opciones de la barra de navegacion -->
+                <li> <a href="./index.html" class="ElementoBarraNav" aria-label="Inicio">Inicio</a></li> <!-- Opcion Inicio -->
+                <li> <a href="./registro.html" class="ElementoBarraNav" aria-label="Registrarse">Registrarse</a></li>
+                <li> <a href="./php/adoptar.php" class="ElementoBarraNav" aria-label="Salas">Adoptar</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./socios.html" class="ElementoBarraNav" aria-label="Reservar">Socios</a></li> <!-- Opcion Reservar -->
+                <li> <a href="./colaborar.html" class="ElementoBarraNav" aria-label="Contacto">Colaborar</a></li> <!-- Opcion Contacto -->
+            </ul>
+        </nav>
+    </header>   <!-- FIN Encabezado de la pagina -->
+
+    <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros) -->
+        <div class="TituloDiv">
+            <h2>Introduce los datos para realizar el registro:</h2>
+        </div>
+        <div class="BloquePrincipalDiv">
+            <div class="ImagenInfoDiv"> <!-- Div para la imagen e info-->
+                <div class="ImagenDiv"> <!-- Div para la imagen-->
+                    <img src="./images/registro.jpg" alt="sala1img" id="ImagenSala">
+                </div>
+                <div class="TextoInfDiv">   <!-- Div para el texto inferior a la imagen -->
+                    <p id="inf1">¡Registrate en el sistema para poder realizar acciones!</p>
+                </div>
+            </div>
+            <div class="TituloFormularioDiv">     <!-- Div para el formulario -->
+                <div class="TituloFormDiv"> <!-- Div para el formulario y titulo de la sala -->
+                    <h3 id="TituloSala">Formulario de registro</h3>   <!-- Titulo de la sala -->
+                </div>    
+                <div class="FormularioDiv">
+                    <form action="./php/registro.php" method="POST" id="formulario" onsubmit="return DatosValidos()"> <!-- ¡CUIDADO! reservado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                        <div class="InputDiv">
+                            <label for="DNI">DNI:</label>
+                            <input type="text" name="DNI" size="30" id="DNI" required> <!-- Introducir Nombre -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" size="30" id="nombre" required>   <!-- Introducir Apellidos -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" name="apellidos" id="apellidos" size="30" required>    <!-- Introducir Correo -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" size="30" required>  <!-- Introducir telefono -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="correo">Correo:</label>
+                            <input type="email" name="correo" id="correo" size="30" autocomplete="off" required> <!-- Introducir fecha -->
+                        </div>
+                        <input type="submit" name="Enviar" id="enviar" value="Registrarme" class="form-submit-button">  <!-- Introducir boton de enviar -->
+                    </form>
+                </div>
+                <!--informacion acerca de los datos -->
+                <p class="InfoExtra">*Al pulsar el botón de "Registrarme" acepta los términos y condiciones de la página, además del tratamiento de sus datos.</p>     
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
+        <div class="ContactoDiv">   <!-- Div para el contacto-->
+            Teléfono: 626 47 18 22 <br>
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto" aria-label="Correo">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
+            Dirección: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
+        </div>
+
+        <div class="CopyDiv">   <!-- Div para el copy-->
+            &copy; Javana 2023 <p></p>
+        </div>
+
+        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->  
+            <div class="RedesSocialesTexto">    <!-- Texto -->
+                Síguenos en nuestras redes sociales
+            </div>
+            <div class="RedesSocialesImagenesDiv">
+                <a href="https://www.instagram.com/" aria-label="Instagram">   <!-- insta -->
+                    <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50">
+                </a>
+                <a href="https://facebook.com/" aria-label="Facebook">        <!-- Face -->
+                    <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50">
+                </a>
+                <a href="https://twitter.com/" aria-label="Twitter">         <!-- Twit -->
+                    <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50">
+                </a>
+            </div>
+        </div>
+    </footer>   <!-- Fin de Barra inferior -->
+</body>
+</html>

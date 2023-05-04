@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  <!--  Parte no visible, añadir el charset con etiquetas meta, scripts ... -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MindMeetings">
+    <meta name="description" content="Mindmeetings es la web con la que podras realizar reserva para salas de estudio, recreo...">
+    <meta name="keywords" content="Reserva, salas, estudio, recreo, reuniones, conferencias, cursos, eventos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Javana</title>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head><!--   FIN Parte no visible  -->
+<body>  <!--Cuerpo de la pagina (Parte visible) -->
+    <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
+        <nav class="BarraNavDiv">
+            <div class="ImagenLogoDiv">
+                <a href="./index.html" aria-label="Imagen del logo"> <!-- Link para la imagen del logo -->
+                    <img src="./images/logo.png" alt="Imagen del logo" class="ImagenLogo" height="100">
+                </a>
+            </div>
+            <ul class="ListaBarraNav"> <!-- -Lista de opciones de la barra de navegacion -->
+                <li> <a href="./index.html" class="ElementoBarraNav" aria-label="Inicio">Inicio</a></li> <!-- Opcion Inicio -->
+                <li> <a href="./registro.html" class="ElementoBarraNav" aria-label="Registrarse">Registrarse</a></li>
+                <li> <a href="./php/adoptar.php" class="ElementoBarraNav" aria-label="Salas">Adoptar</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./socios.html" class="ElementoBarraNav" aria-label="Reservar">Socios</a></li> <!-- Opcion Reservar -->
+                <li> <a href="./colaborar.html" class="ElementoBarraNav" aria-label="Contacto">Colaborar</a></li> <!-- Opcion Contacto -->
+            </ul>
+        </nav>
+    </header>   <!-- FIN Encabezado de la pagina -->
+
+    <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros)-->
+        <div class="ReservaTuSalaDiv"> <!-- div de reserva una sala -->
+            <div class="FondoOscuroDiv">
+                <div class="TituloImagenDiv">
+                    <h2>Un pequeño gesto salva una gran vida</h2>    <!-- Frase en la imagen de la sala 1-->
+                </div>
+                <div class="SeccionReservarDiv">  
+                    <a href="./php/adoptar.php" id="BotonReservar" aria-label="Reservar Sala">Adoptar</a> <!-- link del "boton" de reservas-->
+                </div>
+            </div>
+        </div>
+
+        <div class="InformacionAdicional">
+            <div class="InfoSalaDiv"> <!-- div de ultimas conferencias -->
+                <section>  <!-- Seccion -->
+                    <div class="TituloInfoSala">
+                        <h3>Noticias relacionadas</h3>  <!-- titulo del Seccion -->
+                    </div>
+                    <div id="ImagenSalaDiv">
+                        <img src="./images/noticia.png" alt="Imagen noticia" id="ImagenSala">  <!-- Imagen de la sala2-->
+                    </div>
+                    <div class="TituloInfoSala">
+                        <h4>Jornada de puertas abiertas en el Paseo</h4>  <!-- Titulo de la conferencia -->
+                    </div>
+                    <div class="ContenidoSala">   <!-- Contenido de la conferencia -->
+                        Se realizara una jornada de puertas abiertas para la adopcion de gatos y perros en el centro “El Paseo”...
+                    </div>
+                    <div class="MasInfoDiv">   <!--  Espacio a mas informacion -->
+                        <a href="https://mijascomunicacion.com/actualidad/25088/suspiros-de-cuatro-patas-organiza-una-jornada-de-puertas-abiertas-para-captar-voluntarios/" class="Referencias" aria-label="Noticias">+Info</a> 
+                    </div>
+                </section>
+            </div>
+
+            <div class="ValoresDiv">    <!-- Div para los valores de la empresa -->
+                <section>   <!-- Tipo Seccion -->
+                    <div class="TituloValores">
+                        <h3>¿Por qué Adoptar?</h3>    <!-- Titulo Seccion -->
+                    </div>
+                    <div class="CompromisoDiv">  <!-- Div para el valor Compromiso -->
+                        <div class="ImagenValoresDiv">
+                            <img src="./images/compromiso.png" alt="Imagen logo compromiso" id="ImagenValores">     <!-- Imagen del icono compromiso -->
+                        </div>
+                        <div class="CompromisoTexto">   <!-- Div para el texto -->
+                            Compromiso con el bienestar animal  <!-- texto de compromiso -->
+                        </div>
+                    </div>
+                    <div class="RentabilidadDiv">   <!-- Div para el valor Rentabilidad -->
+                        <div class="ImagenRentabilidadDiv">
+                            <img src="./images/Rentabilidad.png" alt="Imagen logo rentabilidad" id="ImagenRentabilidad"> <!-- Imagen del icono Rentabilidad -->
+                        </div>
+                        <div class="RentabilidadTexto"> <!-- Div para el texto -->
+                            Tramites económicos y rápidos  <!-- texto de Rentabilidad -->
+                        </div>
+                    </div>
+                    <div class="DisponibilidadDiv"> <!-- Div para el valor Disponibilidad -->
+                        <div class="ImagenDisponibilidadDiv">
+                            <img src="./images/Disponibilidad.png" alt="Imagen logo disponibilidad" id="ImagenDisponibilidad"> <!-- Imagen del icono Disponibilidad -->
+                        </div>
+                        <div class="DisponibilidadTexto">   <!-- Div para el texto -->
+                            Disponible todos los dias del año  <!-- texto de Disponibilidad -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="AdminPanel">
+            <div class="AdminPanelDiv">
+                <a href="./panelcontrol.html" id="BotonAdmin" aria-label="Admin">Panel de administrador</a> <!-- link del "boton" de reservas-->
+            </div>
+        </div>
+
+    </main> <!-- FIN Cuerpo de la pagina -->
+
+    <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
+        <div class="ContactoDiv">   <!-- Div para el contacto-->
+            Teléfono: 626 47 18 22 <br>
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto" aria-label="Correo">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
+            Dirección: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
+        </div>
+
+        <div class="CopyDiv">   <!-- Div para el copy-->
+            &copy; Javana 2023 <p></p>
+        </div>
+
+        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->  
+            <div class="RedesSocialesTexto">    <!-- Texto -->
+                Síguenos en nuestras redes sociales
+            </div>
+            <div class="RedesSocialesImagenesDiv">
+                <a href="https://www.instagram.com/" aria-label="Instagram">   <!-- insta -->
+                    <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50">
+                </a>
+                <a href="https://facebook.com/" aria-label="Facebook">        <!-- Face -->
+                    <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50">
+                </a>
+                <a href="https://twitter.com/" aria-label="Twitter">         <!-- Twit -->
+                    <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50">
+                </a>
+            </div>
+        </div>
+    </footer>   <!-- Fin de Barra inferior -->
+
+</body> <!-- FIN Cuerpo de la pagina (Parte visible) -->
+</html>

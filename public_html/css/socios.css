@@ -1,0 +1,13 @@
+.OpcionesImagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.ImagenShow{
+    width: 25em;
+    height: 20em;
+}

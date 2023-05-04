@@ -1,0 +1,314 @@
+ /* Bloque principal (fondo imagen + titulos y boton de reserva tu sala)*/
+.ReservaTuSalaDiv {
+    background-image: url("../images/inicio.png");
+    background-position: center;
+    background-size: cover;
+    height: 45em; 
+    display: flex;
+    align-items: center;
+}
+
+.FondoOscuroDiv{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TituloImagenDiv{
+    margin-top: 3em;
+    align-items: center;
+}
+
+h2{
+    color: #F1F1F1;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+}
+
+.SeccionReservarDiv{
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: 10em;
+    border-radius: 1em;
+}
+
+#BotonReservar{
+    color: #F1F1F1;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: block;
+    font-size: 7mm;
+}
+
+.InformacionAdicional{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+
+/* Informacion acerca de sala especifica */
+
+.InfoSalaDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #fffcbf;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 1em;
+}   
+
+
+.TituloInfoSala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenSalaDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ImagenSala{
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.ContenidoSala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4em;
+    margin-left: 4em;
+    text-align: center
+}
+
+.MasInfoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+/* Espacio para valores */
+
+.ValoresDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 1em;
+}
+
+.TituloValores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.CompromisoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenValoresDiv{
+    background-color: #fffcbf;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ImagenValores
+{
+    height: 60%;
+    width: 60%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+.CompromisoTexto{
+    margin-left: 2em;
+}
+
+.RentabilidadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.ImagenRentabilidadDiv{
+    background-color: #fffcbf;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    margin-left: -2.3em;
+}
+
+#ImagenRentabilidad{
+    height: 62%;
+    width: 62%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+.RentabilidadTexto{
+    margin-left: 2em;
+}
+
+.DisponibilidadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+.ImagenDisponibilidadDiv{
+    background-color: #fffcbf;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    margin-left: 1.7em;
+    height: 22%;
+    margin-right: 1.5em;
+}
+
+#ImagenDisponibilidad{
+    height: 69%;
+    width: 85%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.DisponibilidadTexto{
+    margin-right: 1em;
+}
+
+/* Apartado de noticias */
+.CuerpoNoticias
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Noticia{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+}
+
+.Noticia2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    align-items: center;
+}
+
+h3{
+    display:inline-block;
+}
+
+
+.ImagenNoticia{
+    width: 12em;
+    height: 12em;
+}
+
+.TextoNoticia{
+    float: initial;
+    background-color: #fffcbf;
+    border-radius: 1em;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 3em;
+}
+
+.TextoNoticia2{
+    float: initial;
+    background-color: #fffcbf;
+    border-radius: 1em;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 3em;
+}
+
+.Referencias{
+    color: #000000;
+}
+
+#Summary{
+    background-color: #fffcbf;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: fit-content;
+    display: initial;
+}
+
+#TextoVerNoticia{
+    text-decoration: underline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.AdminPanel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#BotonAdmin{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 1em;
+    background-color: #fffcbf;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+}
